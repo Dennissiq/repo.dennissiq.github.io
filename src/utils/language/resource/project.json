@@ -1,0 +1,7 @@
+{
+    "project":{
+        "title": ["projeto", "project"],
+        "search": ["clique para pesquisar", "click to search"],
+        "commit": ["commitado", "commited"]
+    }
+}

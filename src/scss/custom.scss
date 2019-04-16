@@ -1,0 +1,733 @@
+//! set variables
+$theme-colors: (
+    'primary': #6C63FF,
+    'warning': #9156D8,
+    'secondary': #D91677,
+    'danger': #E65C50,
+    'success': #3EB386,
+    'info': #CFE62E,
+
+    // gray tones
+    'dark': #333333,
+    'medium-dark': #848484,
+    'gray': #CCCCCC,
+    'light-gray': #ECECEC,
+    'white': #FFFFFF
+);
+
+  @font-face {
+    font-family:'Berthold Akzidenz Grotesk' !important;
+    src: url('../fonts/Berthold\ Akzidenz\ Grotesk\ Bold.otf');
+  }
+
+// colors variables
+// $primary: #50C9CE;  
+$primary: #6C63FF;  
+$warning: #9156D8;
+$secondary: #D91677;
+$danger: #E65C50;
+$success: #3EB386;
+$info: #CFE62E;
+
+$primary-hover: #4d4e00;  
+$secondary-hover: #6b0136;  
+
+
+// gray tones
+$dark: #333333;
+$medium-dark: #848484;
+$gray: #CCCCCC;
+$light-gray: #ECECEC;
+$white: #FFFFFF;
+
+$border-radius: 10px;
+
+//  Link underline decoration remove
+a:hover {
+    text-decoration: none !important;  
+}
+.a-link:hover {
+    text-decoration: none !important;
+    color: $dark !important;  
+}
+.a-link {
+    text-decoration: none !important;
+    color: $dark !important;  
+}
+
+.animation-title {
+  animation-name: tracking-in-expand;
+  animation-duration: 3s;
+}
+
+
+.bg-input {   
+    background: transparent; 
+    border:0px;
+    // width:100%;
+    outline-width: 0;    
+}
+
+.bg-input::placeholder{
+    color: $gray;
+}
+
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.btn {
+    font-family: Berthold Akzidenz Grotesk !important;
+}
+
+
+.btn-normal {
+    font-size: 0.9rem !important;
+}
+
+.btn-secondary {
+  background: $secondary !important;
+  border-color: $secondary !important;
+}
+
+.btn-facebook {
+    background: #3B5998 !important;
+    border-color: #3B5998 !important;
+}
+.btn-facebook:hover {
+    background: 	#8b9dc3 !important;
+    border-color: 	#8b9dc3 !important;
+}
+
+// buttons hover
+.btn-secondary:hover {
+  background: $secondary-hover !important;
+  border-color: $secondary-hover !important;
+}
+
+.btn-lg {
+  border-radius: $border-radius !important;
+  font-size: 1rem !important;
+}
+
+.btn-rounded {
+    border-radius: 40px !important;
+}
+
+
+.btn-lg {
+    padding: 0.9rem 1rem !important;
+}
+
+// chips
+.btn-chip {
+    border-radius: 20px !important;
+    background: $secondary;
+    color: $white;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.btn-chip-select.btn-outline-secondary:focus, .btn-outline-secondary.focus {
+    background-color: $secondary !important;
+    color: $white;
+    box-shadow: none !important;
+}
+
+.btn-chip-small {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+// setting text buttons
+.a-secondary {
+    color: $secondary;
+}
+.a-secondary:hover {
+    color: $secondary-hover;
+}
+.a-primary {
+    color: $dark;
+}
+.card-link:hover {
+    cursor: pointer;
+
+    .a-primary { 
+        color: $primary;
+    }
+}
+
+.a-primary:hover { 
+        color: $primary;
+}
+
+
+.a-warning {
+    color: $warning;
+}
+.a-warning:hover {
+    color: $primary-hover;
+}
+
+.a-gray {
+    color: $gray;
+}
+.a-gray:hover {
+    color: $secondary;
+}
+
+.a-gray-footer {
+    color: $gray;
+}
+.a-gray-footer:hover {
+    color: $warning;
+}
+
+.a-dark {
+    color: $dark;
+}
+
+.a-dark:hover {
+    color:$warning;
+}
+
+.a-secondary-small {
+    font-size: 0.75rem !important;
+    color: $secondary;
+}
+.a-secondary-small:hover {
+    font-size: 0.75rem !important;
+    color: $secondary-hover;
+}
+
+.a-warning-small {
+    font-size: 0.75rem !important;
+    color: $warning;
+}
+.a-warning-small:hover {
+    font-size: 0.75rem !important;
+    color: $primary-hover;
+}
+
+.a-gray-small {
+    font-size: 0.75rem !important;
+    color: $gray;
+}
+.a-gray-small:hover {
+    font-size: 0.75rem !important;
+    color: $secondary;
+}
+
+.a-dark-small {
+    font-size: 0.75rem !important;
+    color: $dark;
+}
+
+.a-dark-small:hover {
+    font-size: 0.75rem !important;
+    color:$warning;
+}
+
+//! set classes
+// Please, use in title cases
+.title-extrabig {
+  font-family: Berthold Akzidenz Grotesk;
+  font-size: 6rem;
+}
+.title-big {
+  font-family: Berthold Akzidenz Grotesk;
+  font-size: 4rem;
+}
+.title {
+  font-family: Berthold Akzidenz Grotesk;
+  font-size: 2rem;
+}
+.text-spaced {
+  font-family: Berthold Akzidenz Grotesk;
+  letter-spacing: 4px;
+}
+.text-spaced-min {
+  font-family: Berthold Akzidenz Grotesk;
+  letter-spacing: 2px;
+}
+.subtitle-spaced {
+  font-family: Berthold Akzidenz Grotesk;
+  letter-spacing: 15px;
+}
+
+// headings
+h1 {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 2.5rem;
+}
+h2 {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 2rem;
+}
+h3 {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 1.5rem;
+}
+h5 {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 1.25rem;
+}
+h6 {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 0.8rem !important;
+}
+h6.normal {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 1rem !important;
+}
+
+.text-breadcrumb {
+    font-family: Berthold Akzidenz Grotesk !important;
+    font-size: 0.9rem !important;
+}
+
+// Please, use in text cases
+.text-extrabig {
+  font-family: Open Sans;
+  font-size: 1.75rem;
+}
+.text-big {
+  font-family: Open Sans;
+//   font-size: 1.5rem;
+  font-size: 20px;
+}
+.text {
+  font-family: Open Sans;
+  font-size: 1rem;
+}
+
+.text-small {
+  font-family: Open Sans;
+  font-size: 0.75rem;
+}
+.title-small {
+  font-family: Berthold Akzidenz Grotesk !important;
+  font-size: 0.75rem;
+}
+
+.img-radius {
+    border-radius: $border-radius;
+}
+.img-cover-container {
+  position: relative;
+  width: 50%;
+}
+.img-cover-container:hover .overlay-text{
+    opacity: 0.8;
+}
+
+.img-overlay {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.img-card {
+    border-radius: $border-radius $border-radius 0 0;
+}
+
+.pt-20 {
+    @media (min-width: 1080px) and ( max-width: 1920px) {
+        padding-top: 18rem !important;
+    }
+    @media (min-width: 768px) and ( max-width: 1366px) {
+        padding-top: 11rem !important;
+    }
+}
+.pt-10 {
+    @media (min-width: 1080px) and ( max-width: 1920px) {
+        padding-top: 12rem !important;
+    }
+        @media (min-width: 768px) and ( max-width: 1366px) {
+        padding-top: 6rem !important;
+    }
+
+        @media (min-width: 320px) and ( max-width: 1024px) {
+        padding-top: 6rem !important;
+    }
+}
+.pt-30 {
+    @media (min-width: 1080px) and ( max-width: 1920px) {
+        padding-top: 23rem !important;
+    }
+        @media (min-width: 768px) and ( max-width: 1366px) {
+        padding-top: 16rem !important;
+    }
+}
+// add more paddings
+.p-10 {
+    padding: 6rem !important;
+}
+// .pt-10 {
+//     padding-top: 6rem !important;
+// }
+.pb-10 {
+    padding-bottom: 6rem !important;
+}
+.pl-10 {
+    padding-left: 6rem !important;
+}
+.p-15 {
+    padding: 9rem !important;
+}
+.pt-15 {
+    padding-top: 9rem !important;
+}
+.pb-15 {
+    padding-bottom: 9rem !important;
+}
+.p-20 {
+    padding: 11rem !important;
+}
+.pl-20 {
+    padding-left: 11rem !important;
+}
+.pl-25 {
+    padding-left: 12rem !important;
+}
+.pl-30 {
+    padding-left: 14rem !important;
+}
+.pr-20 {
+    padding-right: 11rem !important;
+}
+
+.pt-40 {
+    padding-top: 17rem !important;
+}
+.pb-20 {
+    padding-bottom: 11rem !important;
+}
+
+.pt-availability {
+    padding-top: 4.6rem !important;
+}
+
+// add more margins 
+
+.m-10 {
+    margin: 6rem !important;
+}
+.mr-10 {
+    margin-right: 6rem !important;
+}
+.mr-15 {
+    margin-right: 8rem !important;
+}
+.ml-15 {
+    margin-left: 8rem !important;
+}
+.ml-10 {
+    margin-left: 6rem !important;
+}
+
+.mt-20 {
+    margin-top: 11rem !important;
+}
+.mb-20 {
+    margin-bottom: 11rem !important;
+}
+
+
+.capitalize-txt::first-letter {
+    text-transform: capitalize !important;
+}
+
+
+// tags
+.badge {
+    border-radius: 4px !important;
+    color: $white !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    font-family: Berthold Akzidenz Grotesk !important;
+}
+
+.p-tag {
+    padding: 4px;
+}
+.p-tag-g {
+    border-radius: 9px !important;
+    padding: 5px !important;
+    font-size: 100% !important;
+    letter-spacing: 1.1px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+}
+// alerts
+
+.alert-danger {
+    background-color: $danger !important;
+}
+.alert-success {
+    background-color: $success !important;
+}
+.alert-secondary {
+    background-color: $secondary !important;
+}
+.alert-gray {
+    background-color: $gray !important;
+}
+
+.alert-white {
+    border: none !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+    background-color: $white !important;
+}
+
+.alert-dismissible {
+    padding-right: 1rem !important;
+}
+
+// set visibility
+.invisible-mobile {
+    @media (min-width: 320px) and ( max-width: 1024px) {
+        display: none !important;
+    }
+}
+
+.invisible-desktop {
+    @media (min-width: 1024px) {
+        display: none !important;
+    }
+}
+
+// set overlays
+.overlay-menu-primary {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $primary;
+  overflow-y: hidden;
+  transition: 0.5s;
+    
+}
+
+
+// navbar custom
+.navbar.no-p {
+    padding: 0 !important;
+}
+
+/* change the background color */
+.navbar-custom-warning {
+    background-color: $primary;
+    box-shadow: 0 9px 52px 0 rgba(102, 0, 255, 0.19);
+    z-index: 1;
+
+}
+/* change the brand and text color */
+.navbar-custom-warning .navbar-brand,
+.navbar-custom-warning .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom-warning .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom-warning .nav-item.active .nav-link,
+.navbar-custom-warning .nav-item:focus .nav-link,
+.navbar-custom-warning .nav-item:hover .nav-link {
+    color: $white;
+}
+
+/* change the background color */
+.navbar-custom-white {
+    background-color: $white;
+}
+/* change the brand and text color */
+.navbar-custom-white .navbar-brand,
+.navbar-custom-white .navbar-text {
+    color: $primary !important;
+}
+/* change the link color */
+.navbar-custom-white .navbar-nav .nav-link {
+    color: $primary !important;
+}
+/* change the color of active or hovered links */
+.navbar-custom-white .nav-item.active .nav-link,
+.navbar-custom-white .nav-item:focus .nav-link,
+.navbar-custom-white .nav-item:hover .nav-link {
+    color: $primary !important;
+}
+
+// set lines
+.line-gray{
+    width:100%;
+    height:1px;
+    background: $gray;
+}
+
+.line-warning {
+    width: 100%;
+    height: 6px;
+    background: $warning;
+}
+
+.line-right-gray {
+    border-right: 0.5px solid $gray
+}
+
+// custom breadcrumb
+.breadcrumb {
+    background: transparent !important; 
+    border: 0px solid rgba(255, 255, 255, 1); 
+    border-radius: 0px; display: block;
+}
+.breadcrumb li {
+    font-family: Berthold Akzidenz Grotesk !important;
+    font-size: 1rem !important;
+
+}
+.breadcrumb a {
+    color: $medium-dark;
+}
+.breadcrumb a:hover {
+    color: $dark;
+}
+.breadcrumb>.active {
+    color: $dark;
+}
+.breadcrumb>li+li:before {
+    color: $medium-dark;
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    margin: 15px;
+}
+// breadcrumb white
+.breadcrumb-white {
+    background: transparent !important; 
+    border: 0px solid rgba(255, 255, 255, 1); 
+    border-radius: 0px; display: block;
+}
+.breadcrumb-white li {
+    font-family: Berthold Akzidenz Grotesk !important;
+    font-size: 1rem !important;
+
+}
+.breadcrumb-white a {
+    color: $white;
+}
+.breadcrumb-white a:hover {
+    color: $white;
+}
+.breadcrumb-white>.active {
+    color: $light-gray;
+}
+.breadcrumb-white>li+li:before {
+    color: $white;
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    margin: 15px;
+}
+
+.container-card p {
+    margin-bottom: 5px;
+}
+
+.shadow-card {
+    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.199);
+}
+
+// loading
+.spinner {
+	width: 80px; height: 80px;	
+	animation: contanim 2s linear infinite;
+}
+$colors-loading: #D91677, rgba(277,22,119,0.5), rgba(277,22,119,0.3), rgba(277,22,119,0.1);
+$d: 175.6449737548828;
+
+svg.loading {
+	width: 100%; height: 100%;
+	
+	left: 0; top: 0;
+	position: absolute;
+	
+	transform: rotate(-90deg);
+	
+	@for $i from 1 through 4 {		
+		&:nth-child(#{$i}) circle {
+			stroke: nth($colors-loading, $i);
+			stroke-dasharray: 1, 300;
+			stroke-dashoffset: 0;
+			
+			animation: strokeanim 3s calc(.2s * (#{$i})) ease infinite;
+			transform-origin: center center;
+		}
+	}
+}
+
+@keyframes strokeanim {
+	0% {
+    stroke-dasharray: 1, 300;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 120, 300;
+    stroke-dashoffset: -$d / 3;
+  }
+  100% {
+    stroke-dasharray: 120, 300;
+    stroke-dashoffset: -$d;
+  }
+}
+
+@keyframes contanim {
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.embed-container { 
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

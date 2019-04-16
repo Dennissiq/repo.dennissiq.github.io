@@ -1,0 +1,14 @@
+{
+    "home":{
+        "header":{
+            "projects": ["PROJETOS", "PROJECTS"]
+        }
+    },
+    "projects":{
+        "title": ["projetos", "projects"],
+        "cardInfo":{
+            "lastUpdate": ["ATUALIZADO EM:", "LAST UPDATE:"],
+            "createdAt": ["CRIADO EM:","CREATED AT:"]
+        }
+    }
+}

@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { LocalizeProvider } from "react-localize-redux";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+// pages
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Project from './components/Pages/Project'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <LocalizeProvider>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" exact component={App}></Route>
+                <Route path="/project/:name" exact component={Project}></Route>
+                <App/>  
+            </Switch>
+        </BrowserRouter>
+    </LocalizeProvider>
+, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
